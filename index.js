@@ -11,25 +11,20 @@ function getRandomIntInclusive(min, max) {
 class Game extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { sum: 0,
-    rollList: [], resultList: []};
+    this.state = { sum: 0 };
   }
 
   numButtonClickedHandler(number) {
       let randomValue = getRandomIntInclusive(1, number);
       this.setState({sum: this.state.sum + randomValue});
-      this.state.rollList.push(" " + number + ":");
-      this.state.resultList.push(" " + randomValue + " ");
-      this.setState({rollList: this.state.rollList.slice()});
-      this.setState({resultList: this.state.resultList.slice()});
+      this.setState({diceNum: number});
+      this.setState({randomValue: randomValue});
   }
 
   clearButtonClickedHandler() {
       this.setState({sum: 0});
       this.setState({diceNum: 0});
       this.setState({randomValue: 0});
-      this.setState({rollList: []});
-      this.setState({resultList: []});
   }
 
   plusButtonClickedHandler() {
@@ -63,13 +58,14 @@ class Game extends React.Component {
                   {this.state.sum}
                 <button className="plus_square" onClick={() => this.plusButtonClickedHandler()}> <img src="images/plus-64.png"/> </button>
               </div>
-              <div className="rollHistory">
-                  {this.state.rollList}
-              </div>
-              <div className="resultHistory">
-                  {this.state.resultList}
+              <div
+                  className="history"> {this.state.diceNum} {this.state.randomValue}
               </div>
           </div>
+        </div>
+        <div className="game-info">
+          <div>{/* status */}</div>
+          <ol>{/* TODO */}</ol>
         </div>
       </div>
     );
@@ -79,3 +75,4 @@ class Game extends React.Component {
 // ========================================
 
 ReactDOM.render(<Game />, document.getElementById('root'));
+

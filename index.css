@@ -14,8 +14,8 @@ ol, ul {
 }
 
 .status {
-  border: 3px solid rgb(0, 0, 0);
-  border-radius: 15px;
+  border: 1px solid rgba(153, 153, 153, 0.5);
+  margin-left: 0px;
   margin-top: 30px;
   margin-bottom: 20px;
   text-align: center;
@@ -23,8 +23,7 @@ ol, ul {
 
 .square {
   background: #fff;
-  border: 1px inset rgba(72, 72, 72, 0.5);
-    border-radius: 6px;
+  border: 1px solid rgba(153, 153, 153, 0.5);
   float: left;
   font-size: 24px;
   font-weight: bold;
@@ -45,7 +44,7 @@ ol, ul {
   font-weight: bold;
   line-height: 34px;
   height: 66px;
-  margin-right: 6px;
+  margin-right: 0px;
   margin-top: 6px;
   padding: 0;
   width: 66px;
@@ -61,7 +60,7 @@ ol, ul {
   line-height: 34px;
   height: 66px;
   margin-right: 0px;
-  margin-left: 6px;
+  margin-left: 0px;
   margin-top: 6px;
   padding: 0;
   width: 66px;
@@ -84,24 +83,19 @@ ol, ul {
 .sum {
   font: 64px "Century Gothic", Futura, sans-serif;
   text-align: center;
-}
 
-.rollHistory {
-  float: left;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 34px;
-  margin-right: 10px;
-  margin-top: -1px;
-  text-align: left;
-  width: 30px;
 }
-.resultHistory {
+.history {
+  background: #00ffff;
+  //border: 1px solid #999;
   float: left;
   font-size: 24px;
   font-weight: bold;
   line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
   margin-top: -1px;
-  text-align: left;
-  width: 30px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
 }
