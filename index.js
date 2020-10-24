@@ -46,18 +46,18 @@ class Game extends React.Component {
         <div className="game-board">
           <div>
               <div className="board-row">
-                  <button className="square" onClick={() => this.numButtonClickedHandler(4)}>  <img src="d4-64.png"/> </button>
-                  <button className="square" onClick={() => this.numButtonClickedHandler(6)}> <img src="d6-64.png"/> </button>
-                  <button className="square" onClick={() => this.numButtonClickedHandler(8)}>  <img src="d8-64.png"/> </button>
-                  <button className="square" onClick={() => this.numButtonClickedHandler(10)}>  <img src="d10-64.png"/> </button>
-                  <button className="square" onClick={() => this.numButtonClickedHandler(12)}>  <img src="d12-64.png"/> </button>
-                  <button className="square" onClick={() => this.numButtonClickedHandler(20)}>  <img src="d20-64.png"/> </button>
-                  <button className="square" onClick={() => this.clearButtonClickedHandler()}> <img src="undo-64.png"/> </button>
+                  <button className="square" onClick={() => this.numButtonClickedHandler(4)}>  <img src="images\d4-64.png"/> </button>
+                  <button className="square" onClick={() => this.numButtonClickedHandler(6)}> <img src="images\d6-64.png"/> </button>
+                  <button className="square" onClick={() => this.numButtonClickedHandler(8)}>  <img src="images\d8-64.png"/> </button>
+                  <button className="square" onClick={() => this.numButtonClickedHandler(10)}>  <img src="images\d10-64.png"/> </button>
+                  <button className="square" onClick={() => this.numButtonClickedHandler(12)}>  <img src="images\d12-64.png"/> </button>
+                  <button className="square" onClick={() => this.numButtonClickedHandler(20)}>  <img src="images\d20-64.png"/> </button>
+                  <button className="square" onClick={() => this.clearButtonClickedHandler()}> <img src="images\undo-64.png"/> </button>
               </div>
               <div className="status">
-                <button className="minus_square" onClick={() => this.minusButtonClickedHandler()}> <img src="minus-64.png"/> </button>
+                <button className="minus_square" onClick={() => this.minusButtonClickedHandler()}> <img src="images\minus-64.png"/> </button>
                   {this.state.sum}
-                <button className="plus_square" onClick={() => this.plusButtonClickedHandler()}> <img src="plus-64.png"/> </button>
+                <button className="plus_square" onClick={() => this.plusButtonClickedHandler()}> <img src="images\plus-64.png"/> </button>
               </div>
               <div className="rollHistory">
                   {this.state.rollList}
